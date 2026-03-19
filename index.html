@@ -5,29 +5,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Welcome</title>
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: Arial, sans-serif;
-    }
-
     body {
+      margin: 0;
       height: 100vh;
       display: flex;
       justify-content: center;
       align-items: center;
       background: linear-gradient(135deg, #667eea, #764ba2);
+      font-family: Arial, sans-serif;
       color: white;
-      text-align: center;
     }
 
     .container {
-      background: rgba(255, 255, 255, 0.12);
+      text-align: center;
+      background: rgba(255,255,255,0.12);
       padding: 40px 60px;
       border-radius: 20px;
-      backdrop-filter: blur(10px);
-      box-shadow: 0 8px 30px rgba(0,0,0,0.2);
     }
 
     h1 {
@@ -38,7 +31,6 @@
     p {
       font-size: 18px;
       margin-bottom: 24px;
-      opacity: 0.9;
     }
 
     button {
@@ -49,20 +41,18 @@
       color: #5a4fcf;
       font-size: 16px;
       cursor: pointer;
-      transition: 0.3s;
     }
 
     button:hover {
-      background: #f1f1f1;
-      transform: translateY(-2px);
+      background: #f2f2f2;
     }
   </style>
 </head>
 <body>
   <div class="container">
     <h1>Welcome</h1>
-    <p>Hello! Your website is running successfully.</p>
-    <button onclick="alert('Welcome to your website!')">Click Me</button>
+    <p>Hello! Click below to enter the next page.</p>
+    <button onclick="window.location.href='page2.html'">Go to Next Page</button>
   </div>
 </body>
 </html>
